@@ -30,7 +30,6 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          {/* <img src="/JobZee-logos__white.png" alt="logo" /> */}
           <p>JOB PORTAL</p>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
@@ -60,7 +59,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to={"/job/me"} onClick={() => setShow(false)}>
-                  VIEW YOUR JOBS
+                  VIEW JOBS
                 </Link>
               </li>
             </>
